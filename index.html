@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Shop</title>
+    <link rel="icon" type="image" href="img/Smile.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <style>
+/* ------------------------------------------------------------------------------------------- */
+*{margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+/* ------------------------------------------------------------------------------------------- */
+#header{ width:100%; height:0.8in; background-color:black;}
+.header-upper{width:98%; height:0.4in; padding-top:0.2cm; padding-left:2%; color:white;}
+.header-upper-left{display:inline-block;}
+.select{ width:1.2in; height:0.8cm; background-color: #cdd245; color: white;}
+.header-upper-right{ float:right; padding-right:2%;}
+.header-lower{width:87%; height:0.4in; padding-left:12%; color:white;}
+.left-border{ border-left:2px solid white; padding:0 8px; }
+/* ------------------------------------------------------------------------------------------- */
+nav{height:1.3in; width: 100%; background-color:white; position:sticky; top:0px; text-align:right;}
+nav ul li{ display:inline-block; line-height:1.3in; font-size:1.2em; margin-right:0.8cm;}
+nav img{ float:left; margin-left:5%;}
+/* ------------------------------------------------------------------------------------------- */
+.first-div{height:85vh; width:100%; background-image:url('img/banner-01.jpg'); background-size: cover; text-align:center;}
+.first-div-glass{ height:100%; width:100%;}
+.first-div-mater{ height:100%; width:100%; color:white; text-align:center;}
+.first-div-mater ul li{display:inline-block; height:0.7cm; width:0.7cm; border:2px solid #b0b435; position:relative; top:75vh; }
+
+/* ------------------------------------------------------------------------------------------- */
+.second-div{ height:75vh; width:100%; padding-top:2cm; }
+.second-div-left{ height:60vh; width:29%; float:left; margin-left:3.5%; box-shadow:4px 4px 25px; color:darkgrey;}
+.second-div-right{ height:60vh; width:29%; margin-left:68%; box-shadow:4px 4px 25px; color:darkgrey;}
+.second-div button{ width:100%; height:13%;border:none; background-color:rgb(222, 222, 19); color:white; font-size:large;} 
+/* ------------------------------------------------------------------------------------------- */
+.third-div{ height:60vh; width:100%; background-color:rgb(235, 235, 243); padding-top:2cm;}
+.third-div-left{ height:50vh; width:45%; float:left; margin-left:3.5%; background-color: aqua;}
+.third-div-right{ height:50vh; width:45%; margin-left:51%; background-color:lightcoral;}
+/* ------------------------------------------------------------------------------------------- */
+.fourth-div{ height:100vh; width:auto; padding:1.5cm 1cm; text-align:center;}
+.fourth-div ul li{ display: inline-block; width:auto; height:1.2cm; background-color:#cdd245; color:white; line-height:1.2cm; padding:0 0.5cm;}
+.fourth-div-left{ height:3.7in; width:23%; float:left; margin-right:2.5%; text-align:left; background-color: rgb(236, 231, 226);}
+.fourth-div-right{ height:3.7in; width:23%; float:right; text-align:left; background-color: rgb(236, 231, 226);}
+.fourth-div button{ height:1cm; width: 2cm; background-color:#cdd245; color:white; border:none;}
+/* ------------------------------------------------------------------------------------------- */
+.fifth-div{ height:110vh; width:100%; background-color:rgb(235, 235, 243); padding-top:1.5cm; text-align:center;}
+.fifth-div-left{ height:80vh; width:29%; float:left; margin-left:3.5%; background-color:white;}
+.fifth-div-right{ height:80vh; width:29%; margin-left:68%; background-color:white;}
+.fifth-div ul li{ display: inline-block; width:1cm; height:1cm; background-color:black; color:white; line-height:1cm;}
+/* ------------------------------------------------------------------------------------------- */
+.last-div{height:4in; width:100%; background-image:url('img/bunch-of\ cira.jpg'); background-size: cover; background-position: bottom;}
+.last-div-glass{height:4in; width:100%; background-color: rgba(69, 67, 67, 0.5); }
+/* .last-div-main{} */
+/* ------------------------------------------------------------------------------------------- */
+.slider{ height:1cm; width:1cm; background-color:#b0b435;line-height:1cm; text-align:center; position:fixed; bottom:0.5in; right:0.5in; }
+.slider a{ color: white; text-decoration: none; background-color:transparent; border:none; font-size:20px; width:100%; height:100%;}
+.slider a:hover{background-color:white; color:black;}
+/* ------------------------------------------------------------------------------------------- */
+footer{ height:auto; width:94%; background-color:black; padding: 0 3%; }
+
+.footer-first-div{ height:2in;width:100%; color:white; padding: 1cm 0;}
+.footer-first-div hr{background-color: #b0b435; height:2px; border:none; width:40%;}
+.footer-first-left{ height:auto; width:32%; float:left;}
+.footer-first-right{ height:auto; width:32%; float:right; margin-left:2%;}
+.footer-first-right ul li{ display:inline-block; border: 1px solid #b0b435; padding:0.2cm 0.3cm;}
+.footer-first-div button{background-color:#b0b435; color:white ; height:1.1cm; width:1in;}
+
+.footer-last-second-div{ height:3.4in;width:100%; color:white; padding: 1cm 0;}
+.footer-last-second-div hr{background-color: #b0b435; height:2px; border:none;}
+.footer-last-second-left{ height:auto; width:32%; float:left;}
+.footer-last-second-right{ height:auto; width:32%; float:right; margin-left:2%;}
+.footer-last-second-right ul li{list-style-type:square; list-style-position: inside; height:27px;}
+.footer-last-second-right a{ color:white; text-decoration:none;}
+.footer-icon{ width:0.5cm; float: left;}
+
+.footer-last-div{ height:1cm; width:100%; text-align:center; line-height:1cm; color:white;}
+/* ------------------------------------------------------------------------------------------- */
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header-upper">
+            <div class="header-upper-left">
+                <select class="select">
+                    <option>¥ JPY</option>
+					<option>$ USD</option>
+					<option>€ EUR</option>
+                </select>
+                <span>Call US :- +11 900 800 100</span>
+            </div>
+            <div class="header-upper-right">
+                <select class="select">
+                    <option>Register Here</option>
+					<option>Sign In</option>
+                </select>
+            </div>
+        </div>
+        <div class="header-lower">
+            <h5>MY ACCOUNT &nbsp;&nbsp;<span class="left-border"> OUR LOCATION</span> <span class="left-border"> CONTACT US</span></h5>
+        </div>
+    </header>
+<!-- --------------------------------------------------------------------------- -->
+    <nav>
+        <img src="img/logo-2.png" >
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>SHOP</li>
+            <li>GALLERY</li>
+            <li>CONTECT US</li>
+            <li><i class="zmdi zmdi-search-for"></i></li>
+            <li>My Cart <sup>3</sup></li>
+        </ul>
+    </nav>
+<!-- ---------------------------------------------------------------------------- -->
+    <main>
+        <div class="first-div">
+            <div class="first-div-glass">
+                <div class="first-div-mater">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div class="second-div">
+            <div class="second-div-left">
+                <img src="img/box-potato.jpg" width="100%" height="85%">
+                <button>Lorem ipsum dolor</button>
+            </div>
+            <div class="second-div-left">
+                <img src="img/box-basket.jpg" width="100%" height="85%">
+                <button>Lorem ipsum dolor</button>
+            </div>
+            <div class="second-div-right">
+                <img src="img/box-veg.jpg" width="100%" height="85%">
+                <button>Lorem ipsum dolor</button>
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div class="third-div">
+            <div class="third-div-left">
+                <img src="img/add-2 .jpg" height="100%" width="100%">
+            </div>
+            <div class="third-div-right">
+                <img src="img/add-1.jpg" height="100%" width="100%">
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div class="fourth-div">
+            <h1>Fruits & Vegetables</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim</p>
+            <br><br>
+            <ul>
+                <li>All</li>
+                <li>Top Featured</li>
+                <li>Best Seller</li>
+            </ul>
+            <br><br>
+            <div class="fourth-div-left">
+                <img src="img/img-pro-01.jpg" width="100%">
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <br>
+                <button>$7.79</button>
+            </div>
+            <div class="fourth-div-left">
+                <img src="img/img-pro-02.jpg" width="100%">
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <br>
+                <button>$9.79</button>
+            </div>
+            <div class="fourth-div-left">
+                <img src="img/img-pro-03.jpg" width="100%">
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <br>
+                <button>$10.79</button>
+            </div>
+            <div class="fourth-div-right">
+                <img src="img/img-pro-04.jpg" width="100%">
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <br>
+                <button>$15.79</button>
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div class="fifth-div">
+            <h1>latest blog</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+            <br><br>
+            <div class="fifth-div-left">
+                <img src="img/blog-img.jpg" width="100%" height="56%">
+                <br>
+                <h3>Fusce in augue non nisi fringilla</h3>
+                <br>
+                <p>
+                    Nulla ut urna egestas, porta libero id, suscipit orci.
+                     Quisque in lectus sit amet urna dignissim feugiat.
+                      Mauris molestie egestas pharetra. Ut finibus cursus
+                       nunc sed mollis. Praesent laoreet lacinia elit id
+                        lobortis.
+                </p>
+                <br><br>
+                <ul>
+                    <li><i class="zmdi zmdi-android"></i></li>
+                    <li><i class="zmdi zmdi-dribbble"></i></li>
+                    <li><i class="zmdi zmdi-comment-text"></i></li>
+                </ul>
+            </div>
+            <div class="fifth-div-left">
+                <img src="img/blog-img-01.jpg" width="100%" height="56%">
+                <br>
+                <h3>Fusce in augue non nisi fringilla</h3>
+                <br>
+                <p>
+                    Nulla ut urna egestas, porta libero id, suscipit orci.
+                     Quisque in lectus sit amet urna dignissim feugiat.
+                      Mauris molestie egestas pharetra. Ut finibus cursus
+                       nunc sed mollis. Praesent laoreet lacinia elit id
+                        lobortis.
+                </p>
+                <br><br>
+                <ul>
+                    <li><i class="zmdi zmdi-android"></i></li>
+                    <li><i class="zmdi zmdi-dribbble"></i></li>
+                    <li><i class="zmdi zmdi-comment-text"></i></li>
+                </ul>
+            </div>
+            <div class="fifth-div-right">
+                <img src="img/blog-img-02.jpg" width="100%" height="56%">
+                <br>
+                <h3>Fusce in augue non nisi fringilla</h3>
+                <br>
+                <p>
+                    Nulla ut urna egestas, porta libero id, suscipit orci.
+                     Quisque in lectus sit amet urna dignissim feugiat.
+                      Mauris molestie egestas pharetra. Ut finibus cursus
+                       nunc sed mollis. Praesent laoreet lacinia elit id
+                        lobortis.
+                </p>
+                <br><br>
+                <ul>
+                    <li><i class="zmdi zmdi-android"></i></li>
+                    <li><i class="zmdi zmdi-dribbble"></i></li>
+                    <li><i class="zmdi zmdi-comment-text"></i></li>
+                </ul>
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div class="last-div">
+            <div class="last-div-glass">
+                <div class="last-div-main">
+                </div>
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div class="slider">
+            <a href="#header">&uArr;</a>
+        </div>
+    </main>
+<!-- ---------------------------------------------------------------------------- -->
+    <footer>
+        </div>
+        <div class="footer-first-div">
+            <div class="footer-first-left">
+                <h3>Business Time</h3>
+                <hr><br>
+                <h5>Monday - Friday: 08.00am to 05.00pm</h5>
+                <br>
+                <h5>Saturday: 10.00am to 08.00pm</h5>
+                <br>
+                <h5>Sunday: Closed</h5>
+            </div>
+            <div class="footer-first-right">
+                <h3>Social Media</h3>
+                <hr> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br><br> elit.</p>
+                <br>
+                <ul>
+                    <li><i class="zmdi zmdi-facebook"></i></li>
+                    <li><i class="zmdi zmdi-twitter-box"></i></li>
+                    <li><i class="zmdi zmdi-linkedin"></i></li>
+                    <li><i class="zmdi zmdi-google-plus"></i></li>
+                    <li><i class="zmdi zmdi-rss"></i></li>
+                    <li><i class="zmdi zmdi-pinterest"></i></li>
+                    <li><i class="zmdi zmdi-whatsapp"></i></li>
+                </ul>
+            </div>
+            <div class="footer-first-right">
+                <h3>Newsletter</h3>
+                <hr><br>
+                <input type="text" placeholder="Email Address*"  style="height:1cm; width:90%;">
+                <br><br>
+                <button>Submit</button>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-last-second-div">
+            <div class="footer-last-second-left">
+                <h4>ABOUT FRESHSHOP</h4>
+                <hr>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </p>
+                <br><br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua.
+                </p>
+            </div>
+            
+            <div class="footer-last-second-right">
+                <h4>CONTACT US</h4>
+                <hr>
+                <br>
+                <div>
+                    <div class="footer-icon"> <i class="zmdi zmdi-pin"></i> </div>
+                    <div style="margin-left:0.5cm;"> <p>Address: Michael I. Days 3756</p>  <p>Preston Street Wichita,</p>  <p>KS 67213</p> </div>
+                </div>
+                <br>
+                <div>
+                    <div class="footer-icon"> <i class="zmdi zmdi-phone-in-talk"></i> </div>
+                    <div style="margin-left:0.5cm;"> Phone: +1-888 705 770 </div>
+                </div>
+                <br>
+                <div>
+                    <div class="footer-icon"> <i class="zmdi zmdi-email"></i></div>
+                    <div style="margin-left:0.5cm;"> Email: contactinfo@gmail.com </div>
+                </div>
+            </div>
+
+            <div class="footer-last-second-right">
+                <h4>INFORMATION</h4>
+                <hr>
+                <br>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Our Sitemap</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                </ul>
+            </div>
+        </div>
+<!-- ---------------------------------------------------------------------------- -->
+        <div class="footer-last-div">
+            <h4> All Rights Reserved. © 2018 <span>ThewayShop</span>Design By : <span>html design</span> </h4>
+        </div>
+    </footer>
+</body>
+</html>
